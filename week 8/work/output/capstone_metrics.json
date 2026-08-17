@@ -1,0 +1,27 @@
+{
+  "data_source": "data/raw/content_refresh_anonymized.csv (starter dataset)",
+  "n_rows": 30000,
+  "n_clients": 32,
+  "base_rate": 0.542,
+  "split_design": "GroupShuffleSplit by client_id, test_size=0.2, random_state=42",
+  "results_at_k50": {
+    "baseline_rule": 0.64,
+    "logistic_regression": 0.72,
+    "random_forest": 0.58
+  },
+  "naive_vs_grouped_precision_at_50": {
+    "naive_split_inflated": 0.92,
+    "grouped_split_honest": 0.72
+  },
+  "leakage_audit": {
+    "auc_with_window_overlap_features": 0.616,
+    "auc_without": 0.549
+  },
+  "limitations": [
+    "starter dataset only (30k rows / 32 clients), not the full ~79M-row warehouse",
+    "zero feedly/comparison-article rows in this split's holdout by chance",
+    "numeric features partially overlap the label's own 30-day trend window (AUC 0.616 -> 0.549 without them)",
+    "no causal claim: decision-support ranking, not a guaranteed-recovery prediction",
+    "single 90-day snapshot per row, no true time series"
+  ]
+}
