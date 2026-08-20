@@ -1,0 +1,12 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="240" height="240" rx="28" fill="#F7F8FA"/>
+
+  <text x="120" y="118" text-anchor="middle" font-family="Space Grotesk, 'Segoe UI', sans-serif"
+        font-size="92" font-weight="700" fill="#1E3A5F" letter-spacing="-2">AE</text>
+
+  <path d="M 30 172 L 78 172 L 92 148 L 106 196 L 120 172 L 210 172"
+        fill="none" stroke="#1E3A5F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"/>
+
+  <path d="M 92 148 L 106 196"
+        fill="none" stroke="#FF6B4A" stroke-width="5" stroke-linecap="round"/>
+</svg>
