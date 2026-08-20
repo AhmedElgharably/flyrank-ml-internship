@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADAII — Ahmed Elgharably</title>
+<link rel="icon" href="ae-logo-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="brand" href="index.html">
+    <img src="ae-logo-mark.svg" alt="AE logo">
+    <span>Ahmed Elgharably</span>
+  </a>
+  <div class="navlinks">
+    <a href="adaii.html">ADAII</a>
+    <a href="cellula.html">Cellula</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <a class="back" href="index.html">← Back</a>
+  <h1>ADAII — An Adaptive Data-Driven AI Monitoring in Athletes</h1>
+  <p class="sub" style="color:var(--muted); max-width:60ch;">Graduation project. Wearable IoT, computer vision, and AI for real-time football player performance and injury-risk monitoring.</p>
+
+  <section>
+    <h2>The problem</h2>
+    <p>Injury in athletes is usually diagnosed after it happens, not before. Coaches and medical staff act on visible symptoms, by which point the damage is already done. ADAII asks whether physiological signal data, captured continuously through wearables, can surface injury risk early enough to intervene.</p>
+  </section>
+
+  <section>
+    <h2>Approach</h2>
+    <p>The core of the system is <strong>Vest Model v8</strong>, a Conv2D + GRU architecture trained on the WESAD physiological signal dataset, paired with computer vision for movement analysis. The convolutional layers extract short-term signal patterns; the GRU layers track how those patterns evolve over time, which is what lets the model flag risk building up rather than just reacting to a single bad reading.</p>
+    <div class="placeholder">[ADD: Vest Model v8 architecture diagram]</div>
+  </section>
+
+  <section>
+    <h2>Results</h2>
+    <div class="stats">
+      <div class="stat">[metric — detection accuracy]</div>
+      <div class="stat">[metric — false-positive rate]</div>
+      <div class="stat">[metric — signals processed / latency]</div>
+    </div>
+    <div class="placeholder">[ADD: signal plots / results visualization from your notebooks]</div>
+  </section>
+
+  <section>
+    <h2>What I'd do next</h2>
+    <p>[One or two sentences — e.g. expanding beyond football, testing on a larger athlete cohort, or tightening real-time latency for on-device inference.]</p>
+  </section>
+
+  <div class="cta-row">
+    <a class="btn btn-primary" href="cellula.html">See the Cellula deployment →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Ahmed Elgharably</p>
+  </div>
+</footer>
+
+</body>
+</html>

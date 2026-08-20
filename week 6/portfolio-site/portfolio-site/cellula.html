@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cellula Deployment — Ahmed Elgharably</title>
+<link rel="icon" href="ae-logo-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="brand" href="index.html">
+    <img src="ae-logo-mark.svg" alt="AE logo">
+    <span>Ahmed Elgharably</span>
+  </a>
+  <div class="navlinks">
+    <a href="adaii.html">ADAII</a>
+    <a href="cellula.html">Cellula</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <a class="back" href="index.html">← Back</a>
+  <h1>Uber Fare Prediction — From Notebook to Live App</h1>
+  <p class="sub" style="color:var(--muted); max-width:60ch;">ML internship deliverable at Cellula Technologies.</p>
+
+  <section>
+    <h2>The problem</h2>
+    <p>Estimate a ride's fare from trip conditions — distance, time of day, weather, traffic, car condition — using historical Uber fare data.</p>
+  </section>
+
+  <section>
+    <h2>Pipeline</h2>
+    <p>EDA on the fare dataset, then a shared scikit-learn <code>ColumnTransformer</code> + <code>Pipeline</code> (StandardScaler for numeric features, OrdinalEncoder for car condition, OneHotEncoder for weather/traffic). Compared a Linear Regression baseline against a tuned <strong>HistGradientBoostingRegressor</strong>, and saved the winning pipeline for deployment.</p>
+  </section>
+
+  <section>
+    <h2>Live demo</h2>
+    <p>The trained pipeline is deployed and running — try it with real inputs, not a screenshot.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="PASTE-YOUR-HUGGINGFACE-SPACE-URL-HERE" target="_blank" rel="noopener">Try the live fare predictor →</a>
+    </div>
+    <div class="placeholder">[ADD: screenshot of a real prediction from the deployed Space]</div>
+  </section>
+
+  <section>
+    <h2>Results</h2>
+    <div class="stats">
+      <div class="stat">[metric — RMSE]</div>
+      <div class="stat">[metric — R²]</div>
+      <div class="stat">[metric — vs. baseline improvement]</div>
+    </div>
+  </section>
+
+  <div class="cta-row">
+    <a class="btn btn-outline" href="about.html">More about me →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Ahmed Elgharably</p>
+  </div>
+</footer>
+
+</body>
+</html>
